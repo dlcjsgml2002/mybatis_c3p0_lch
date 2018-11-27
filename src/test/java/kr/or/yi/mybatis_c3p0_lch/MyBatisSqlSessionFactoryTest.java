@@ -16,7 +16,7 @@ public class MyBatisSqlSessionFactoryTest {
 	public void testOpenSession() {
 		Log.debug("testOpenSession()");
 
-		SqlSession session = MyBatisSqlSessionFactory.opSqlSession();
+		SqlSession session = MyBatisSqlSessionFactory.openSession();
 		Log.debug("session" + session);
 		Assert.assertNotNull(session);
 	}

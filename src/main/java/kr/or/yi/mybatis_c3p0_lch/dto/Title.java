@@ -4,6 +4,13 @@ public class Title {
 	private int code;
 	private String name;
 
+	
+
+	public Title(int code, String name) {
+		this.code = code;
+		this.name = name;
+	}
+
 	public int getCode() {
 		return code;
 	}
