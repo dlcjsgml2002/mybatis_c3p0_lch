@@ -11,7 +11,7 @@ public interface TitleDao {
 
 	int insertTitle(Title title);
 
-	int deleteTitle(String code);
+	int deleteTitle(int code);
 
 	int updateTitle(Title title);
 }
