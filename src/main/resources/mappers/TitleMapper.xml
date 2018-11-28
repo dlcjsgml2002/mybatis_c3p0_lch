@@ -4,4 +4,20 @@
 	<insert id="insertTitle" parameterType="Title">
 		INSERT INTO title (code, name) VALUES(#{code}, #{name});
 	</insert>
+	
+	<select id="selectTitleByAll" resultType="Title">
+		SELECT code, name FROM title;
+	</select>
+	
+	<select id="selectTitleByCode" parameterType="Title" resultType="Title">
+		SELECT code, name FROM title where code = #{code};
+	</select>
+	
+	<delete id="deleteTitle">
+		DELETE FROM title WHERE code=#{param1};
+	</delete>
+	
+	<update id="updateTitle" parameterType="Title">
+		UPDATE title SET name=#{name} WHERE code=#{code};
+	</update>
 </mapper>
